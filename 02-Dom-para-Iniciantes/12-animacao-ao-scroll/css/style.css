@@ -211,6 +211,7 @@ body {
   }
 }
 
+/* animação do primeiro bloco animais */
 .js .js-tabcontent section {
   display: none;
 }
@@ -230,6 +231,7 @@ body {
     transform: translate3d(0, 0, 0);
   }
 }
+/* Final da animação */
 
 .js .js-accordion dd {
   display: none;
