@@ -20,7 +20,7 @@ a {
 
 img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     border-radius: 5px;
 }
 
@@ -111,13 +111,11 @@ img {
 
 .col-wide {
     grid-column: 1 / -1;
-    width: 100%;
 }
 
 .imagem-1 {
     grid-row: span 2;
     align-self: end;
-    width: 100%;
 }
 
 .imagem-2 {
@@ -333,5 +331,11 @@ p {
     }
     .sidenav li a {
       margin: 30px 30px 30px 0;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .content {
+        grid-template-columns: auto;
     }
   }
