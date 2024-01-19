@@ -1,0 +1,23 @@
+p {
+  color: red;
+  background: pink;
+}
+
+a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  background: blue;
+}
+
+div {
+  background: #999;
+  max-width: 960px;
+  min-height: 200px;
+  margin: 0 auto;
+}
+div a {
+  color: aquamarine;
+}
+
+/*# sourceMappingURL=style.css.map */

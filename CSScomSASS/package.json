@@ -1,0 +1,12 @@
+{
+  "name": "csscomsass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    /* Esse comando realiza converção automatica*/
+    "sass": "sass --watch scss/main.scss css/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
