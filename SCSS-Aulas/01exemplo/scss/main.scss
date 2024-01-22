@@ -1,6 +1,6 @@
 $cor-primaria: blue;
 $font-primaria: monospace;
-$gutter: 40px;
+
 $color-primaria: white;
 $border_round: 5px;
 
@@ -35,6 +35,18 @@ div {
 
 section {
   @extend %clearfix;
+}
+
+@function grid($colunas, $total: 12) {
+  @return round(($colunas / $total) * 100%);
+}
+
+div {
+  width: grid(5);
+}
+
+@function em($pixels, $contexto: 16) {
+  @return ($pixels / $contexto) * 1em;
 }
 
 @mixin title-large {
@@ -131,6 +143,7 @@ ul {
   li {
     display: inline-block;
     list-style: none;
+    font-size: em(36);
   }
   a {
     display: block;
@@ -139,9 +152,52 @@ ul {
     background: $cor-primaria;
     color: $color-primaria;
     border-radius: $border_round;
+    font-size: em(16, 36);
     &:hover,
     &.active {
-      background: #8777;
+      background: transparentize(blue, 0.5);
     }
+  }
+}
+
+/* Loop */
+
+/* For */
+@for $i from 1 through 16 {
+  $width: $i / 16 * 100%;
+  .porcento-#{$i} {
+    width: $width;
+  }
+}
+/*  */
+
+/* While */
+$numero: 1;
+
+@while $numero <= 6 {
+  .type-#{$numero} {
+    font-size: 16 * $numero + px;
+  }
+  $numero: $numero + 1;
+}
+
+/*  */
+
+$container: 768;
+$gutter: 20;
+$colunas: 12;
+
+@for $i from 1 through $colunas {
+  $width: $container / $colunas * $i - $gutter;
+  .grid-#{$i} {
+    width: $width + px;
+  }
+}
+
+$lista: face twitter snapchat insta;
+
+@each $item in $lista {
+  .rede-#{$item} {
+    background: url("../img/#{$item}.png");
   }
 }

@@ -4,7 +4,7 @@ div {
   height: 300px;
 }
 
-/*  */
+/* final IF  */
 section::after, div::after {
   content: "";
   display: table;
@@ -17,6 +17,10 @@ section::after, div::after {
   padding: $gutter;
   height: $width / 2;
 } */
+div {
+  width: 42%;
+}
+
 section {
   max-width: 600px;
   margin: 0 auto;
@@ -81,6 +85,7 @@ ul {
 ul li {
   display: inline-block;
   list-style: none;
+  font-size: 2.25em;
 }
 ul a {
   display: block;
@@ -89,9 +94,167 @@ ul a {
   background: blue;
   color: white;
   border-radius: 5px;
+  font-size: 0.4444444444em;
 }
 ul a:hover, ul a.active {
-  background: rgba(136, 119, 119, 0.4666666667);
+  background: rgba(0, 0, 255, 0.5);
+}
+
+/* Loop */
+/* For */
+.porcento-1 {
+  width: 6.25%;
+}
+
+.porcento-2 {
+  width: 12.5%;
+}
+
+.porcento-3 {
+  width: 18.75%;
+}
+
+.porcento-4 {
+  width: 25%;
+}
+
+.porcento-5 {
+  width: 31.25%;
+}
+
+.porcento-6 {
+  width: 37.5%;
+}
+
+.porcento-7 {
+  width: 43.75%;
+}
+
+.porcento-8 {
+  width: 50%;
+}
+
+.porcento-9 {
+  width: 56.25%;
+}
+
+.porcento-10 {
+  width: 62.5%;
+}
+
+.porcento-11 {
+  width: 68.75%;
+}
+
+.porcento-12 {
+  width: 75%;
+}
+
+.porcento-13 {
+  width: 81.25%;
+}
+
+.porcento-14 {
+  width: 87.5%;
+}
+
+.porcento-15 {
+  width: 93.75%;
+}
+
+.porcento-16 {
+  width: 100%;
+}
+
+/*  */
+/* While */
+.type-1 {
+  font-size: 16px;
+}
+
+.type-2 {
+  font-size: 32px;
+}
+
+.type-3 {
+  font-size: 48px;
+}
+
+.type-4 {
+  font-size: 64px;
+}
+
+.type-5 {
+  font-size: 80px;
+}
+
+.type-6 {
+  font-size: 96px;
+}
+
+/*  */
+.grid-1 {
+  width: 44px;
+}
+
+.grid-2 {
+  width: 108px;
+}
+
+.grid-3 {
+  width: 172px;
+}
+
+.grid-4 {
+  width: 236px;
+}
+
+.grid-5 {
+  width: 300px;
+}
+
+.grid-6 {
+  width: 364px;
+}
+
+.grid-7 {
+  width: 428px;
+}
+
+.grid-8 {
+  width: 492px;
+}
+
+.grid-9 {
+  width: 556px;
+}
+
+.grid-10 {
+  width: 620px;
+}
+
+.grid-11 {
+  width: 684px;
+}
+
+.grid-12 {
+  width: 748px;
+}
+
+.rede-face {
+  background: url("../img/face.png");
+}
+
+.rede-twitter {
+  background: url("../img/twitter.png");
+}
+
+.rede-snapchat {
+  background: url("../img/snapchat.png");
+}
+
+.rede-insta {
+  background: url("../img/insta.png");
 }
 
 /*# sourceMappingURL=estilo.css.map */
