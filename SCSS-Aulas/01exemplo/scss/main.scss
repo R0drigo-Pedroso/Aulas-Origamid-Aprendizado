@@ -1,8 +1,41 @@
 $cor-primaria: blue;
 $font-primaria: monospace;
-$gutter: 20px;
+$gutter: 40px;
 $color-primaria: white;
 $border_round: 5px;
+
+/* Usando IF e ELSE */
+div {
+  $width: 300px;
+  width: $width;
+  @if $width > 400px {
+    height: $width * 1.5;
+  } @else {
+    height: $width;
+  }
+}
+/*  */
+
+%clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* div {
+  $width: 800px;
+  width: $width - 2 * $gutter;
+  padding: $gutter;
+  height: $width / 2;
+} */
+
+div {
+  @extend %clearfix;
+}
+
+section {
+  @extend %clearfix;
+}
 
 @mixin title-large {
   font-size: 4em;

@@ -1,0 +1,11 @@
+{
+  "name": "aulas-origamid-aprendizado",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch SCSS-Aulas/01exemplo/scss/main.scss SCSS-Aulas/01exemplo/css/estilo.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
